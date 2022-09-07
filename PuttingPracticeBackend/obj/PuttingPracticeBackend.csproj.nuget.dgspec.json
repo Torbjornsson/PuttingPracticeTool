@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Dev\\Rider\\PuttingPracticeTool\\PuttingPracticeBackend\\PuttingPracticeBackend.csproj": {}
+    "/home/borge/RiderProjects/PuttingPracticeTool/PuttingPracticeBackend/PuttingPracticeBackend.csproj": {}
   },
   "projects": {
-    "F:\\Dev\\Rider\\PuttingPracticeTool\\PuttingPracticeBackend\\PuttingPracticeBackend.csproj": {
+    "/home/borge/RiderProjects/PuttingPracticeTool/PuttingPracticeBackend/PuttingPracticeBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Dev\\Rider\\PuttingPracticeTool\\PuttingPracticeBackend\\PuttingPracticeBackend.csproj",
+        "projectUniqueName": "/home/borge/RiderProjects/PuttingPracticeTool/PuttingPracticeBackend/PuttingPracticeBackend.csproj",
         "projectName": "PuttingPracticeBackend",
-        "projectPath": "F:\\Dev\\Rider\\PuttingPracticeTool\\PuttingPracticeBackend\\PuttingPracticeBackend.csproj",
-        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "F:\\Dev\\Rider\\PuttingPracticeTool\\PuttingPracticeBackend\\obj\\",
+        "projectPath": "/home/borge/RiderProjects/PuttingPracticeTool/PuttingPracticeBackend/PuttingPracticeBackend.csproj",
+        "packagesPath": "/home/borge/.nuget/packages/",
+        "outputPath": "/home/borge/RiderProjects/PuttingPracticeTool/PuttingPracticeBackend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/borge/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,11 +53,16 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.8, 6.0.8]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -68,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.108/RuntimeIdentifierGraph.json"
         }
       }
     }
