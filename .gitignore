@@ -457,3 +457,4 @@ $RECYCLE.BIN/
 ## FileExtensions
 ##
 *.dll
+**/obj/
