@@ -1,6 +1,6 @@
 namespace PuttingPracticeBackend.Models;
 
-public class RoundTemplate
+public class RoundTemplate : Round
 {
-    //Todo: add properties, extend round?
+    public bool IsPublic { get; set; }
 }
