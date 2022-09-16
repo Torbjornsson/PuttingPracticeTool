@@ -1,8 +1,12 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace PuttingPracticeBackend.Models;
 
-public class UpdateUserRequest
+public class AuthenticateRequest
 {
+    [Required]
     public string Email { get; set; }
-    public string DisplayName { get; set; }
+
+    [Required]
     public string Password { get; set; }
 }
