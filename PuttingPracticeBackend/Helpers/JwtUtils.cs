@@ -31,7 +31,7 @@ public class JwtUtils : IJwtUtils
         return tokenHandler.WriteToken(token);
     }
 
-    public int? ValidateToken(string token)
+    public int? ValidateToken(string? token)
     {
         if (token == null)
         {
