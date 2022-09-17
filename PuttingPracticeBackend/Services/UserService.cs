@@ -1,6 +1,6 @@
-using System.Security.Authentication;
 using AutoMapper;
 using PuttingPracticeBackend.Data;
+using PuttingPracticeBackend.Helpers;
 using PuttingPracticeBackend.Interfaces;
 using PuttingPracticeBackend.Models;
 
@@ -25,7 +25,7 @@ public class UserService : IUserService
 
         if (user == null || BCrypt.Net.BCrypt.Verify(request.Password, user.Password))
         {
-            throw new AuthenticationException("Email or Password is incorrect");
+            throw new AppException("Email or Password is incorrect");
         }
 
         var response = _mapper.Map<AuthenticateResponse>(user);
@@ -60,7 +60,7 @@ public class UserService : IUserService
         registerRequest.Email = registerRequest.Email.ToLower().Trim();
         if (_context.Users.Any(x => x.Email == registerRequest.Email))
         {
-            throw new Exception($"Email {registerRequest.Email} is already taken");
+            throw new AppException($"Email {registerRequest.Email} is already taken");
         }
 
         var user = _mapper.Map<User>(registerRequest);
@@ -79,7 +79,7 @@ public class UserService : IUserService
 
         if (updateUserRequest.Email != user.Email && _context.Users.Any(x => x.Email == updateUserRequest.Email))
         {
-            throw new Exception($"Email {updateUserRequest.Email} is already taken");
+            throw new AppException($"Email {updateUserRequest.Email} is already taken");
         }
 
         if (!string.IsNullOrEmpty(updateUserRequest.Password))

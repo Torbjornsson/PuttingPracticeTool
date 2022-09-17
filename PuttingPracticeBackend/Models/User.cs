@@ -1,8 +1,10 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace PuttingPracticeBackend.Models;
 
+[Table("Users")]
 public class User
 {
     public int Id { get; set; }

@@ -1,5 +1,6 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using PuttingPracticeBackend.Authorization;
 using PuttingPracticeBackend.Helpers;
 using PuttingPracticeBackend.Interfaces;
@@ -7,7 +8,7 @@ using PuttingPracticeBackend.Models;
 
 namespace PuttingPracticeBackend.Controllers;
 
-[Microsoft.AspNetCore.Authorization.Authorize]
+[Authorize]
 [ApiController]
 [Route("[controller]")]
 public class UserController : ControllerBase
@@ -16,11 +17,11 @@ public class UserController : ControllerBase
     private IMapper _mapper;
     private readonly AppSettings _appSettings;
 
-    public UserController(IUserService userService, IMapper mapper, AppSettings appSettings)
+    public UserController(IUserService userService, IMapper mapper, IOptions<AppSettings> appSettings)
     {
         _userService = userService;
         _mapper = mapper;
-        _appSettings = appSettings;
+        _appSettings = appSettings.Value;
     }
 
     [AllowAnonymous]
@@ -60,7 +61,7 @@ public class UserController : ControllerBase
         return Ok(new { message = "User updated successfully" });
     }
 
-    [HttpPut("{id:int}")]
+    [HttpDelete("{id:int}")]
     public IActionResult Delete(int id)
     {
         _userService.Delete(id);

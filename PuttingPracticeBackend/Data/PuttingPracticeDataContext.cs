@@ -16,5 +16,5 @@ public class PuttingPracticeDataContext : DbContext
         options.UseSqlite(_configuration.GetConnectionString("PuttingPracticeDatabase"));
     }
 
-    public DbSet<User> Users { get; set; } = null!;
+    public DbSet<User> Users { get; set; }
 }
