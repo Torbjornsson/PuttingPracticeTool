@@ -17,4 +17,6 @@ public class PuttingPracticeDataContext : DbContext
     }
 
     public DbSet<User> Users { get; set; }
+
+    public DbSet<Round> Rounds { get; set; }
 }

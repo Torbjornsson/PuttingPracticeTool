@@ -7,6 +7,8 @@ public class Round
     public User User { get; set; } = null!;
 
     public DateTime CreatedAt { get; set; }
+    
+    public DateTime FinishedAt { get; set; }
 
     public string Name { get; set; } = null!;
     
