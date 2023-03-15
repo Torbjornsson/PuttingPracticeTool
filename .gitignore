@@ -458,6 +458,6 @@ $RECYCLE.BIN/
 ##
 *.dll
 **/obj/
-obj
-bin
-packages
+**/obj
+**/bin
+**/packages
