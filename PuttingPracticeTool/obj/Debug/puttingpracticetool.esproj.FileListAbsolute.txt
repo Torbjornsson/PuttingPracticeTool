@@ -1,2 +1,0 @@
-D:\Scripts\rider\testing\PuttingPracticeTool\PuttingPracticeTool\obj\Debug\puttingpracticetool.esproj.SuggestedBindingRedirects.cache
-D:\Scripts\rider\testing\PuttingPracticeTool\PuttingPracticeTool\obj\Debug\puttingpracticetool.esproj.CoreCompileInputs.cache
